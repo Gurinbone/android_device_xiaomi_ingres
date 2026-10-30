@@ -48,7 +48,8 @@ BYPASS_CHARGE_TOGGLE_PATH = /sys/class/qcom-battery/night_charging
 
 # Axion Kernel Manager
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/kernel/ax_kernel_manager_taro.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_kernel_manager.xml \
+    $(LOCAL_PATH)/configs/ax_kernel_manager_taro.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_kernel_manager.xml \
+    $(LOCAL_PATH)/configs/ax_perf_thermal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_perf_thermal.xml \
     $(LOCAL_PATH)/rootdir/etc/ax_init_taro.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ax_init_taro.rc
 
 TARGET_NEEDS_VULKAN_MEDIA_FIX := true
