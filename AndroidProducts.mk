@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ingres.mk
+    $(LOCAL_DIR)/aospa_ingres.mk
+
+COMMON_LUNCH_CHOICES := \
+    aospa_ingres-user \
+    aospa_ingres-userdebug \
+    aospa_ingres-eng

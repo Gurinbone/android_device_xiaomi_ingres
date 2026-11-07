@@ -4,13 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ifeq (aospa_ingres,$(TARGET_PRODUCT))
+
 # Inherit from ingres device
 $(call inherit-product, device/xiaomi/ingres/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from the AOSPA configuration
+$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
-PRODUCT_NAME := lineage_ingres
+PRODUCT_NAME := aospa_ingres
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -23,3 +25,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=ingres
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Boot animation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_BLUR := true
+
+endif
