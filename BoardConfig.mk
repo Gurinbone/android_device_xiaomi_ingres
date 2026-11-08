@@ -7,13 +7,14 @@
 # Security patch level
 VENDOR_SECURITY_PATCH := 2025-04-01
 
+DEVICE_PATH := device/xiaomi/ingres
+KERNEL_PREBUILT_DIR := $(DEVICE_PATH)-kernel
+
 # Inherit from xiaomi sm8450-common
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
 include vendor/xiaomi/ingres/BoardConfigVendor.mk
-
-DEVICE_PATH := device/xiaomi/ingres
 
 # Audio
 AUDIO_FEATURE_ENABLED_CIRRUS_CALIBRATION_RESISTANCE := true
