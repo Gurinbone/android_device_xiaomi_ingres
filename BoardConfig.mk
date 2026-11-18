@@ -28,3 +28,5 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Screen density
 TARGET_SCREEN_DENSITY := 395
+
+BOARD_OTA_ENABLE_REPLACE_ZSTD := false 
