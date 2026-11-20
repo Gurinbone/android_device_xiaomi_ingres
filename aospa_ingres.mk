@@ -21,8 +21,20 @@ PRODUCT_MODEL := 21121210G
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="ingres-user 14 UKQ1.240624.001 OS2.0.5.0.ULJCNXM release-keys" \
     BuildFingerprint=Redmi/ingres/ingres:14/UKQ1.240624.001/OS2.0.5.0.ULJCNXM:user/release-keys \
+    BuildSystemFingerprint=Redmi/ingres/ingres:14/UKQ1.240624.001/OS2.0.5.0.ULJCNXM:user/release-keys \
+    BuildKeys=release-keys \
+    BuildVersionTags=release-keys \
     DeviceProduct=ingres \
     SystemName=ingres
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.build.fingerprint=Redmi/ingres/ingres:14/UKQ1.240624.001/OS2.0.5.0.ULJCNXM:user/release-keys
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.build.fingerprint=Redmi/ingres/ingres:14/UKQ1.240624.001/OS2.0.5.0.ULJCNXM:user/release-keys
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.build.tags=release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
