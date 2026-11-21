@@ -27,7 +27,3 @@ PRODUCT_PACKAGES += \
     SystemUIResIngres \
     ApertureResIngres \
     NfcResIngres
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)

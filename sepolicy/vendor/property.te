@@ -1,0 +1,3 @@
+# Defined in Android 17 QCOM sepolicy_vndr; declare here for Neoteric's bka-8450 sepolicy_vndr
+vendor_internal_prop(vendor_nfc_prop)
+vendor_restricted_prop(vendor_sensors_dbg_prop)

@@ -1,0 +1,2 @@
+# Defined in Android 17 QCOM sepolicy_vndr; declare here for Neoteric's bka-8450 sepolicy_vndr
+type vendor_proc_swappiness, proc_type, fs_type;

@@ -1,0 +1,2 @@
+# Defined in Android 17 QCOM sepolicy_vndr; declare here for Neoteric's bka-8450 sepolicy_vndr
+type vendor_hal_dspmanager_aidlservice, hal_service_type, service_manager_type;

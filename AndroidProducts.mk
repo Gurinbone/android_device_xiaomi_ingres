@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aospa_ingres.mk
+    $(LOCAL_DIR)/neoteric_ingres.mk
 
 COMMON_LUNCH_CHOICES := \
-    aospa_ingres-user \
-    aospa_ingres-userdebug \
-    aospa_ingres-eng
+    neoteric_ingres-user \
+    neoteric_ingres-userdebug \
+    neoteric_ingres-eng
